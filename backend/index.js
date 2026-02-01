@@ -10,7 +10,7 @@ const fetch = require("cross-fetch");
 const Schema = require('./Schema.js');
 const bcrypt = require("bcryptjs");
 
-const DB = "mongodb+srv://snips:test@cluster0.hscsw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const DB = process.env.DB_URL;
 const jwtKey = process.env.JWT;
 app.use(cors({
     origin: '*'
