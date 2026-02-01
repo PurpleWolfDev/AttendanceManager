@@ -1,0 +1,177 @@
+.__today_container{
+    height: 60px;
+    width: 100%;
+    background: rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    user-select: none;
+    font-size: 22px;
+    font-weight: 500;
+    z-index:3;
+    position: fixed;
+    top: 0;
+}
+
+.__today_backBtn{
+    height: 45px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    position: absolute;
+    left: 20px;
+}
+
+.__today_backBtn:active{
+    background: rgb(50, 50, 50);
+    transition-duration: .2s;
+}
+
+.__today_restContainer{
+    min-height: calc(100% - 60px);
+    background: rgb(245, 245, 245);
+    margin-top: 60px;
+    width: 100%;
+    user-select: none;
+}
+
+
+.__today_out{
+    animation-name: fade1;
+    background: rgb(245, 245, 245);
+    animation-duration: .5s;
+}
+
+@keyframes fade1 {
+    0%{
+        opacity: 0;
+    }
+    100%{ 
+        opacity: 1;
+    }
+}
+.__today_overView{
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 155px);
+    user-select: none;
+    flex-direction: column;
+}
+
+.__today_totalPresent{
+    height: 160px;
+    width: 93%;
+    background: #fff;
+    box-shadow: 1px 1px 4px rgb(200, 200, 200);
+    border-radius: 5px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 340px;
+}
+
+.__today_presentHead{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    padding-left: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.__today_presentData{
+    height: 50%;
+    width: 100%;
+    font-size: 21px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.__today__details{
+    min-height: calc(100vh - 150px);
+    width: 100%;
+}
+
+.__today__search{
+    height: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 50px;
+    margin-left: 5%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.__today_sBtn:active{
+    background: transparent;
+    user-select: none;
+}
+
+.__today_studentsList{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.__today_student{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin:2.5px;
+    height: 60px;
+    flex-direction: column;
+}
+
+
+.__today_studentName{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.__today_studentAdm{
+    margin-left: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.__today_presentIcon{
+    height: 100%;
+    aspect-ratio: 1;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    right: 0;
+    background: rgba(200, 200, 200, .1);
+}
+
+.__today_red{
+    color: red;
+}
+.__today_green{
+    color: rgb(124, 205, 1);
+}

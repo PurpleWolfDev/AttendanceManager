@@ -1,0 +1,28 @@
+.__add_inputContainer{
+    height: auto;
+    padding-top: -10px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.__add_photo{
+    height: 50px;
+    width: 100%;
+    background: #111;
+    color:white;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-bottom: -15px;
+    font-size: 20px;
+    display: flex;
+    box-shadow: 1px 1px 4px rgb(200, 200, 200);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
